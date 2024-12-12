@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+:root
+{
+
+    /* ### Primary */
+
+--Green200lighter: hsl(148, 38%, 91%);
+--Green600medium: hsl(169, 82%, 27%);
+--Red: hsl(0, 66%, 54%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Grey500medium: hsl(186, 15%, 59%);
+--Grey900darker: hsl(187, 24%, 22%);
+
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+html
+{
+  scroll-behavior: smooth;
+  transition: .8s linear;
+}
+
+
+
+body
+{
+    background-color: var(--Green200lighter);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 160px auto;
+}
+
+main
+{
+    width: 45%;
+    background-color: var(--White);
+    border-radius: 15px;
+    padding: 2rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+main > form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    
+}
+main > form > h1
+{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--Grey900darker);
+    padding-bottom: .3rem;
+}
+
+main > form > .input-text-group,
+main > form > .input-radio-group > .input-radiobuttons,
+main > form > .input-radio-group > .input-radiobuttons > fieldset > .input-radio
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+main > form > .input-radio-group > .input-radiobuttons > fieldset > .input-radio
+{
+    padding-left: .6rem;
+    display: flex;
+  gap: 11px;
+  align-items: center;
+  justify-content: center;
+}
+
+main > form > .input-text-group > .input-text-field,
+main > form > .input-email-field,
+main > form > .input-radio-group > .input-radiobuttons > fieldset
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+main > form > .input-text-group > .input-text-field > input,
+main > form > .input-email-field > input,
+main > form > .input-radio-group > .input-radiobuttons > fieldset,
+main > form > .message-div > textarea
+{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: .5rem;
+    border: 1px solid var(--Grey500medium);
+    color: var(--Grey900darker);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+main > form > .agree-consent > .input-checkbox-group
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+}
+
+main > form > .input-text-group > .input-text-field > input:hover,
+main > form > .input-email-field > input:hover,
+main > form > .input-radio-group > .input-radiobuttons > fieldset:hover,
+main > form > .message-div > textarea:hover
+{
+   border-color: var(--Green600medium);
+   cursor: pointer;
+}
+
+input:focus {
+  border: 1px solid var(--Green600medium);
+  outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"]
+ {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--Green600medium);
+  cursor: pointer;
+}
+
+main > form > .input-radio-group > .input-radiobuttons > fieldset:hover
+
+{
+  border-color: var(--Green600medium);
+  cursor: pointer;
+  background: hsla(169.4, 82.5%, 26.9%, 0.13);
+}
+
+
+main > form > .input-radio-group > .input-radiobuttons > fieldset > .input-radio > input:focus
+
+{
+
+   color: red;
+
+}
+
+main > form > .input-text-group > .input-text-field > label,
+main > form > .input-email-field > label,
+main > form > .input-radio-group > legend,
+main > form > .message-div > label,
+main > form > .agree-consent > .input-checkbox-group > label
+
+{
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--Grey900darker);
+    padding: .5rem 0;
+}
+
+
+main > form > .agree-consent > .input-checkbox-group > label {
+  margin: 0 10px;
+}
+
+  main > form > .input-text-group > .input-text-field > label > span,
+  main > form > .input-email-field > label > span,
+  main > form > .input-radio-group > legend > span,
+  main > form > .message-div > label > span,
+  main > form > .agree-consent > .input-checkbox-group > label >span
+  {
+    color: var(--Green600medium);
+    font-size: .9rem;
+    padding-left: 2px;
+  }
+
+  main > form > .input-text-group > .input-text-field > .aria-invalid ,
+  main > form > .input-email-field > .aria-invalid,
+  main > form > .input-email-field > .aria-errormessage,
+  main > form > .message-div > .aria-invalid,
+  main > form > .input-radio-group > .aria-errormessage,
+  main > form > .agree-consent > .aria-required
+  {
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--Red);
+    letter-spacing: 1px;
+    padding: .5rem 0 0.2rem;
+    display: none;
+  }
+
+  
+  main > form > .input-radio-group > .input-radiobuttons > fieldset > .input-radio > label
+
+  {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--Grey900darker);
+    
+     
+  }
+
+  main > form > .message-div
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+
+main > form > .input-text-group > .input-text-field > input.invalid,
+main > form > .input-email-field > input.invalid,
+main > form > .message-div > textarea.invalid
+
+
+  {
+
+    border:1px solid var(--Red);
+
+  }
+
+
+
+  main > form > .agree-consent
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  main > form > .agree-consent 
+  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+     padding: 1rem 0 1rem; 
+
+  }
+
+  main > form > button
+  {
+    background-color: var(--Green600medium);
+    color:var(--White);
+    padding: 1rem 0;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    cursor: pointer;
+  }
+
+main > .success_message
+  {
+    background: var(--Grey900darker);
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    align-self: center;
+    padding: 1.5rem 1.5rem;
+    gap: 10px;
+    border-radius: 10px;
+    position: fixed;
+    top:-150px;
+
+
+  }
+
+  main > .success_message.active
+  {
+    position: absolute;
+    transition: .4s linear;
+    top: -100px;
+ 
+  }
+
+main > .success_message > h2
+  {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: .5rem;
+    font-size: .9rem;
+    font-weight: 500;
+  }
+
+  main > .success_message > p
+
+  {
+    font-size: .9rem;
+    font-weight: 200;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+main > .attribution {
+     margin: 1.5rem auto;
+     font-size: 13px; 
+     text-align: center; 
+    }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/* mobile view */
+@media(max-width:1030px)
+{
+
+  main 
+  {
+    width: 100%;
+  }
+
+  main > form > .input-text-group
+  {
+
+    flex-direction: column;
+  }
+
+main > form > .input-radio-group > .input-radiobuttons > fieldset > .input-radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-direction: row;
+  font-size: 11px;
+}
+
+
+form > .input-radio-group > .input-radiobuttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+
+main > .success_message.active
+  {
+
+    top:-100px;
+
+
+  }
+
+}
+/* mobile view */

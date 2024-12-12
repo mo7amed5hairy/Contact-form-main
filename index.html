@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+
+</head>
+<body>
+
+
+
+  <main>
+
+
+
+    <form id="form" novalidate>
+
+      <h1>Contact Us</h1>
+
+      <div class="input-text-group">
+        <div class="input-text-field">
+          <label for="first_name">First Name  <span>*</span></label>
+          <input type="text" class="input fname" name="first_name" id="first_name" aria-hidden="true"  aria-invalid="true">
+          <span class="aria-invalid aria-hidden" >This field is required</span>
+          <!-- <span class="aria-describedby">Enter Your First Name</span> -->
+        </div>
+        <div class="input-text-field">
+          <label for="last_name">Last Name  <span>*</span></label>
+          <input type="text" class="input lname" name="last_name" id="last_name" aria-invalid="false">
+          <span class="aria-invalid">This field is required</span>
+          <!-- <span class="aria-describedby">Enter Your Last Name</span> -->
+        </div>
+      </div>
+
+
+      <div class="input-email-field">
+        <label for="email"> Email Address <span>*</span></label>
+        <input type="email" name="email" class="input mail" id="email" aria-describedby="true" aria-autocomplete="true" aria-errormessage="true" aria-invalid="true">
+        <span class="aria-invalid">This field is required</span>
+        <span class="aria-errormessage"> 
+           Please enter a valid email address
+        </span>
+      </div>
+
+
+  
+    
+      <div class="input-radio-group">        
+        <legend>  Query Type <span>*</span> </legend>
+        <div class="input-radiobuttons" aria-errormessage="true">
+          <fieldset>
+            <div class="input-radio">
+              <input type="radio" class="radion_btn" name="query_type" id="General_Enquiry" >
+              <label for="General_Enquiry">General Enquiry</label>
+            </div>
+          </fieldset>
+          
+        <fieldset>
+              <div class="input-radio">
+                <input type="radio" class="radion_btn" name="query_type" id="Support_Request" >
+                <label for="Support_Request"> Support Request</label>
+              </div>
+            </fieldset>
+        </div>
+          <span class="aria-errormessage">Please select a query type</span>
+      </div>
+     
+
+        
+      
+      <div class="message-div">
+        <label for="Message">Message <span>*</span>  </label>
+        <textarea name="Message" id="Message" class="msg" cols="30" rows="4" aria-invalid="true"></textarea>
+        <span class="aria-invalid">This field is required</span>
+      </div>
+      
+      <div class="agree-consent">
+        <div class="input-checkbox-group">
+          <input type="checkbox" class="agree_consent" name="agree_consent" id="agree_consent" aria-required="true">
+          <label for="agree_consent">
+          I consent to being contacted by the team <span>*</span>
+        </label>
+        </div>
+      <span class="aria-required"> 
+         To submit this form, please consent to being contacted
+      </span>
+      </div>
+      
+        <button id="Submit">Submit</button>
+    </form>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://wa.me/+201000876076">Mohamed Khairy</a>.
+    </div>
+
+
+          <!-- success message -->
+          <div class="success_message">
+            <h2> <img src="./assets/images/icon-success-check.svg" alt="icon-success-check">  Message Sent!</h2>
+            <p>Thanks for completing the form. We'll be in touch soon!</p>
+           </div>
+          <!-- success message -->
+
+  </main>
+
+
+  
+
+</body>
+<script src="script.js"></script>
+</html>
