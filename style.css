@@ -166,7 +166,7 @@ main > form > .input-radio-group > .input-radiobuttons > fieldset > .input-radio
 
 main > form > .input-text-group > .input-text-field > label,
 main > form > .input-email-field > label,
-main > form > .input-radio-group > legend,
+main > form > .input-radio-group > h2,
 main > form > .message-div > label,
 main > form > .agree-consent > .input-checkbox-group > label
 
@@ -184,7 +184,7 @@ main > form > .agree-consent > .input-checkbox-group > label {
 
   main > form > .input-text-group > .input-text-field > label > span,
   main > form > .input-email-field > label > span,
-  main > form > .input-radio-group > legend > span,
+  main > form > .input-radio-group > h2 > span,
   main > form > .message-div > label > span,
   main > form > .agree-consent > .input-checkbox-group > label >span
   {
