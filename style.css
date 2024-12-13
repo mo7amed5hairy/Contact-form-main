@@ -82,6 +82,11 @@ main > form > .input-radio-group > .input-radiobuttons > fieldset > .input-radio
     gap: 10px;
 }
 
+main > form > .input-radio-group > .input-radiobuttons
+{
+    margin-top: 0.5rem;
+}
+
 main > form > .input-radio-group > .input-radiobuttons > fieldset > .input-radio
 {
     padding-left: .6rem;
