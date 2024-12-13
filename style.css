@@ -346,6 +346,10 @@ main > .attribution {
 /* mobile view */
 @media(max-width:1030px)
 {
+    body
+{
+    margin: 100px auto !important;
+}
 
   main 
   {
@@ -380,7 +384,7 @@ form > .input-radio-group > .input-radiobuttons {
 main > .success_message.active
   {
 
-    top:-100px;
+    top:-130px;
 
 
   }
