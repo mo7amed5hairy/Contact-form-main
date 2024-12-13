@@ -301,7 +301,7 @@ main > .success_message
   {
     position: absolute;
     transition: .4s linear;
-    top: -100px;
+    top: 0 !important;
  
   }
 
