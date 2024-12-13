@@ -84,7 +84,7 @@ main > form > .input-radio-group > .input-radiobuttons > fieldset > .input-radio
 
 main > form > .input-radio-group > .input-radiobuttons
 {
-    margin-top: 0.5rem;
+    margin-top: 0.5rem !important;
 }
 
 main > form > .input-radio-group > .input-radiobuttons > fieldset > .input-radio
